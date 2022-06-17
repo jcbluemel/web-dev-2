@@ -1,0 +1,68 @@
+/* some colors you may find useful:
+  #115ff4 background color blue
+  #060ce9 board color darker blue
+  #28a200 clue showing color green
+  #8d2ab5 button color purple
+  #74119c button clicked darker purple
+*/
+
+body {
+  background-color: #115ff4;
+  margin: 30px;
+  font-family: Copse;
+  color: white;
+}
+
+#container {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#start {
+  background-color: #8d2ab5;
+  width: 150px;
+  padding: .5em 2.5em;
+  border: none;
+  border-radius: 0.5em;
+  color: white;
+  font-size: 1em;
+  margin: 0.5em 0;
+}
+
+.loading {
+  display: none;
+  padding-top: 30px;
+}
+
+#jeopardy {
+  display: none;
+}
+
+table,
+th,
+td {
+  border: 2px solid lightgray;
+  border-collapse: collapse;
+}
+
+.header>td {
+  height: 100px;
+  text-transform: uppercase;
+}
+
+td {
+  height: 120px;
+  width: 200px;
+  background-color: #060ce9;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* allow click event on font awesome */
+td>span {
+  pointer-events: none;
+}
